@@ -51,7 +51,7 @@ ul.nav {
 
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 50%;
 }
 
 ul.nav a li {
@@ -66,8 +66,7 @@ ul.nav a li:hover {
 }
 
 .divisor {
-    width: 1.4px; 
+    width: 2px; 
     height: 32px;
     background-color: #fff;
 }
-

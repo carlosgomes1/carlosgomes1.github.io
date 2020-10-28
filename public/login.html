@@ -31,6 +31,14 @@
                     <a href="#">
                         <li>SOBRE MIM</li>
                     </a>
+                    <div class="divisor"></div>
+                    <a href="#">
+                        <li>ARTIGOS</li>
+                    </a>
+                    <div class="divisor"></div>
+                    <a href="#">
+                        <li>LOGIN</li>
+                    </a>
 
                 </ul>
             </div>
@@ -40,8 +48,8 @@
             <div class="main-container">
                 <div class="register-message">
                     <h1>Faça login ou cadastre-se.</h1>
-                    <h3>Se cadastrando, você receberá notícias frequentes sobre meus artigos e novidades no mundo do
-                        xadrez, assim como aulas e dicas sobre aberturas, finais, sacrifícios e muito mais.</h3>
+                    <h3 id="letter">Se cadastrando, você receberá notícias frequentes sobre meus artigos e novidades no mundo do xadrez, assim como aulas e dicas sobre aberturas, finais, sacrifícios e muito mais.
+                    </h3>
                     <div class="buttons-container">
                         <button>Ver artigos</button>
                         <button>Sobre o autor</button>
@@ -55,20 +63,20 @@
                             <h1>Login</h1>
                             <div class="input-container">
                                 <i class="fa fa-envelope svg" style="font-size: 18px"></i>
-                                <input type="email" placeholder="Seu e-mail...">
+                                <input type="email" id="login-email" placeholder="Seu e-mail...">
                             </div>
                             <div class="input-container">
                                 <i class="fa fa-lock svg2" style="font-size: 22px"></i>
-                                <input type="password" placeholder="Sua senha...">
+                                <input type="password" id="login-password" placeholder="Sua senha...">
                             </div>
-                            <button>Entrar</button>
+                            <button id="button-login" type="button">Entrar</button>
                             <span id="create">Não possuo conta</span>
                         </fieldset>
                     </form>
 
                     <form id="cadastro">
                         <fieldset>
-                            <legend><img src="../src/assets/login/king.svg"></legend>
+                            <legend><img src="../src/assets/login/horse.svg"></legend>
                             <h1>Cadastro</h1>
                             <div class="input-container">
                                 <i class="fa fa-user svg" style="font-size: 18px"></i>
@@ -95,3 +103,4 @@
 
 </html>
 <script src="../src/js/register.js"></script>
+<script src="../src/js/letter.js"></script>

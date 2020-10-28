@@ -17,6 +17,16 @@ body {
     }
 }
 
+@keyframes piscar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* MAIN */
 
 main {
@@ -197,8 +207,8 @@ form#cadastro fieldset button {
     border: 1px solid #333;
     border-radius: 8px;
 
-    background-color: #333;
     color: #f3f3f3;
+    background-color: rgb(134, 63, 30);
 
     font: 500 16px Roboto, sans-serif;
     cursor: pointer;
@@ -209,7 +219,7 @@ form#cadastro fieldset button {
 form#login fieldset button:hover, 
 form#cadastro fieldset button:hover {
     background-color: #f3f3f3;
-    color: #333;
+    color: rgb(134, 63, 30);
 }
 
 form#login fieldset span, 
@@ -226,4 +236,55 @@ form#cadastro fieldset span {
 form#login fieldset span:hover, 
 form#cadastro fieldset span:hover {
     color: #999999;
+}
+
+#letter::after {
+    content: '|';
+    margin-left: 3px;
+    animation: piscar 0.5s infinite alternate;
+}
+
+@media (max-width: 1000px) {
+    main .main-container .register-message {
+        display: none;
+    }
+}
+
+@keyframes testezinho {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    } 
+
+    25% {
+        transform: matrix(-0.8, 0.7, 1, 1, 0.9, 1.2);
+
+    }
+
+    50% {
+        transform: matrix(1, 0.9, -0.7, 1, 1, 0.9);
+
+    }
+
+    75% {
+        visibility: hidden;
+    opacity: 0;
+    transform: matrix(0.9, 0, 0, 0.9, 0, 0);
+
+
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 1;
+    }
+}
+
+#teste {
+    margin: 20px;
+    width: 70px;
+    background-color: blue;
+
+    padding: 100px;
+
+    animation: testezinho 3s infinite;
 }
