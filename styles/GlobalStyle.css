@@ -70,3 +70,90 @@ ul.nav a li:hover {
     height: 32px;
     background-color: #fff;
 }
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.menu-barra {
+    background-color: white;
+    height: 5px;
+    width: 30px;
+
+    border-radius: 16px;
+
+    transition: 0.3s;
+}
+
+.barra-2 {
+    margin: 4px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 13vh;
+    left: 0;
+
+    z-index: 5;
+
+    display: none;
+
+    animation: appearFromTop 0.5s;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu ul li {
+    font: 500 16px Roboto;
+    color: #f3f3f3;
+    cursor: pointer;
+
+    padding: 5px;
+
+    transition: color 0.3s;
+}
+
+.menu ul li:hover {
+    color: rgb(134, 63, 30);
+}
+
+.rotate1 {
+    transform: rotate(45deg);
+}
+
+.rotate2 {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 4.5px;
+}
+
+@keyframes appearFromTop {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1220px) {
+    ul.nav {
+        display: none;
+    }
+
+    header {
+        box-shadow: 0 0 0 0;
+
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+}

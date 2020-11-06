@@ -22,7 +22,7 @@
     <div class="container">
         <header>
             <div class="header-container">
-                <img src="../src/assets/global/chess-logo.svg" alt="Logo">
+                <img src="../src/assets/global/chess-logo.svg" alt="Logo" id="logo">
                 <ul class="nav">
                     <a href="fav.html">
                         <li>JOGADORES FAVORITOS</li>
@@ -39,8 +39,30 @@
                     <a href="#">
                         <li>LOGIN</li>
                     </a>
-
                 </ul>
+
+                <div id="hamburger" class="menu-hamburger">
+                    <span class="menu-barra barra-1"></span>
+                    <span class="menu-barra barra-2"></span>
+                    <span class="menu-barra barra-3"></span>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <a href="fav.html">
+                            <li>JOGADORES FAVORITOS</li>
+                        </a>
+                        <a href="#">
+                            <li>SOBRE MIM</li>
+                        </a>
+                        <a href="#">
+                            <li>ARTIGOS</li>
+                        </a>
+                        <a href="#">
+                            <li>LOGIN</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -48,7 +70,8 @@
             <div class="main-container">
                 <div class="register-message">
                     <h1>Faça login ou cadastre-se.</h1>
-                    <h3 id="letter">Se cadastrando, você receberá notícias frequentes sobre meus artigos e novidades no mundo do xadrez, assim como aulas e dicas sobre aberturas, finais, sacrifícios e muito mais.
+                    <h3 id="letter">Se cadastrando, você receberá notícias frequentes sobre meus artigos e novidades no
+                        mundo do xadrez, assim como aulas e dicas sobre aberturas, finais, sacrifícios e muito mais.
                     </h3>
                     <div class="buttons-container">
                         <button>Ver artigos</button>
@@ -104,3 +127,5 @@
 </html>
 <script src="../src/js/register.js"></script>
 <script src="../src/js/letter.js"></script>
+<script src="../src/js/hamburger.js"></script>
+<script src="../src/js/common.js"></script>

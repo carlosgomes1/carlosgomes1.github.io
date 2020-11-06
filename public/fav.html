@@ -19,9 +19,9 @@
     <div class="container">
         <header>
             <div class="header-container">
-                <img src="../src/assets/global/chess-logo.svg" alt="Logo">
+                <img src="../src/assets/global/chess-logo.svg" alt="Logo" id="logo">
                 <ul class="nav">
-                    <a href="#">
+                    <a href="fav.html">
                         <li>JOGADORES FAVORITOS</li>
                     </a>
                     <div class="divisor"></div>
@@ -36,8 +36,30 @@
                     <a href="login.html">
                         <li>LOGIN</li>
                     </a>
-
                 </ul>
+
+                <div id="hamburger" class="menu-hamburger">
+                    <span class="menu-barra barra-1"></span>
+                    <span class="menu-barra barra-2"></span>
+                    <span class="menu-barra barra-3"></span>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <a href="fav.html">
+                            <li>JOGADORES FAVORITOS</li>
+                        </a>
+                        <a href="#">
+                            <li>SOBRE MIM</li>
+                        </a>
+                        <a href="#">
+                            <li>ARTIGOS</li>
+                        </a>
+                        <a href="login.html">
+                            <li>LOGIN</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -200,3 +222,6 @@
 </body>
 
 </html>
+
+<script src="../src/js/hamburger.js"></script>
+<script src="../src/js/common.js"></script>

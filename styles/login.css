@@ -47,6 +47,8 @@ main .main-container {
 main .main-container .register-message {
     display: flex;
     flex-direction: column;
+
+    margin-right: 16px;
 }
 
 .register-message h1 {
@@ -125,8 +127,6 @@ form#cadastro {
     
     width: 100%;
     max-width: 600px;
-
-    margin-left: 16px;
 }
 
 form#cadastro {
@@ -169,7 +169,7 @@ form#cadastro fieldset h1 {
     align-items: center;
     justify-content: space-between;
 
-    width: 80%;
+    width: 90%;
     padding: 8px;
 
     background-color: #f3f3f3;
@@ -199,7 +199,7 @@ form#cadastro fieldset h1 {
 
 form#login fieldset button, 
 form#cadastro fieldset button {
-    width: 80%;
+    width: 90%;
     padding: 8px;
 
     margin: 8px 0;
@@ -250,6 +250,16 @@ form#cadastro fieldset span:hover {
     }
 }
 
+@media (max-width: 530px) {
+    .register {
+        min-width: 300px;
+    }
+
+    main .main-container {
+        width: 90%;
+    }
+}
+
 @keyframes testezinho {
     0% {
         transform: matrix(1, 0, 0, 1, 0, 0);
@@ -277,14 +287,4 @@ form#cadastro fieldset span:hover {
         visibility: hidden;
         opacity: 1;
     }
-}
-
-#teste {
-    margin: 20px;
-    width: 70px;
-    background-color: blue;
-
-    padding: 100px;
-
-    animation: testezinho 3s infinite;
 }
